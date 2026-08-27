@@ -1,11 +1,11 @@
 export const SITE = {
-  name: "Hildra",
+  name: "hildra",
   legalName: "Hildra",
   brandLine: "Soluciones Digitales",
   tagline: "Tecnología más humana para simplificar la vida y los negocios.",
   description:
     "Desarrollamos software que impulsa tu negocio. Creamos aplicaciones móviles, sistemas web y soluciones tecnológicas a la medida para pequeñas empresas, emprendedores y negocios en crecimiento.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.hildra.com.mx",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hildra.com",
   locale: "es_MX",
   email: "hildra.ti@gmail.com",
   whatsapp: {
@@ -25,10 +25,9 @@ export const WHATSAPP_URL = `https://wa.me/${SITE.whatsapp.number}?text=${encode
 
 export const NAV_ITEMS = [
   { label: "Inicio", href: "/#inicio" },
+  { label: "Productos", href: "/#productos" },
+  { label: "Valores", href: "/#valores" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Soluciones", href: "/#soluciones" },
-  { label: "Precios", href: "/#precios" },
   { label: "Nosotros", href: "/#nosotros" },
-  { label: "Blog", href: "/blog" },
   { label: "Contacto", href: "/#contacto" },
 ] as const;

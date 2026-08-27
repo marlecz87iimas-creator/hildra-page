@@ -13,7 +13,7 @@ const variants: Record<ButtonVariant, string> = {
   outline:
     "border border-border bg-transparent text-foreground hover:border-accent hover:text-accent",
   whatsapp:
-    "bg-white text-[#0a192f] shadow-[var(--shadow-soft)] hover:bg-white/95 [&_svg]:text-whatsapp",
+    "bg-white text-[#1a1f2e] shadow-[var(--shadow-soft)] hover:bg-white/95 [&_svg]:text-whatsapp",
 };
 
 const sizes: Record<ButtonSize, string> = {

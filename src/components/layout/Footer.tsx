@@ -10,14 +10,14 @@ import { SITE } from "@/lib/constants";
 
 const quickLinksLeft = [
   { label: "Inicio", href: "/#inicio" },
-  { label: "Servicios", href: "/#servicios" },
-  { label: "Soluciones", href: "/#soluciones" },
+  { label: "Productos", href: "/#productos" },
+  { label: "Valores", href: "/#valores" },
 ];
 
 const quickLinksRight = [
+  { label: "Servicios", href: "/#servicios" },
   { label: "Nosotros", href: "/#nosotros" },
-  { label: "Blog", href: "/blog" },
-  { label: "Precios", href: "/#precios" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 const legalLinks = [
@@ -36,7 +36,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#071526] text-white">
+    <footer className="bg-[#1a1f2e] text-white">
       <Container className="py-14 sm:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1fr_auto]">
           <div>

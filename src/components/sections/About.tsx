@@ -25,7 +25,7 @@ export function About() {
 
       <div className="grid overflow-hidden rounded-3xl border border-border lg:grid-cols-[0.9fr_1.1fr]">
         <AnimatedSection>
-          <div className="h-full bg-[#0a192f] px-6 py-8 text-white sm:px-8 sm:py-10">
+          <div className="h-full bg-[#1a1f2e] px-6 py-8 text-white sm:px-8 sm:py-10">
             <h3 className="font-display text-xl font-semibold">
               Lo que nos distingue
             </h3>

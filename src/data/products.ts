@@ -1,0 +1,76 @@
+import type { Product } from "@/types";
+import { DEMO_URLS } from "@/lib/demoUrls";
+
+export const products: Product[] = [
+  {
+    id: "costea",
+    name: "Costea",
+    tagline: "Costos y cotizaciones para artesanas y talleres",
+    description:
+      "Calcula materiales, mano de obra y márgenes en minutos. Genera cotizaciones profesionales, conviértelas en proyectos y lleva el control de cada trabajo desde la app móvil o el portal web.",
+    features: [
+      "Proyectos con costos, materiales y precio sugerido",
+      "Cotizaciones convertibles a trabajo activo",
+      "Agenda de citas con clientes",
+      "Integración con inventario Stockea",
+      "Respaldo en la nube con Hildra Core",
+    ],
+    preview: "costea",
+    imageAlt: "Vista del portal Costea con proyectos y cotizaciones",
+    logo: "/products/costea-logo.png",
+    accentClass: "text-coral",
+    gradientClass: "product-gradient-costea",
+    cta: "Solicitar acceso",
+    ctaHref: "/#contacto",
+    demoUrl: DEMO_URLS.costea,
+    demoLabel: "Abrir portal Costea",
+    status: "available",
+  },
+  {
+    id: "stockea",
+    name: "Stockea",
+    tagline: "Inventario y ventas bajo control",
+    description:
+      "Gestiona productos, movimientos de stock, alertas de existencias bajas y ventas desde un solo lugar. Ideal para tiendas, bodegas y negocios que necesitan claridad en su inventario.",
+    features: [
+      "Dashboard con resumen de inventario y valor total",
+      "Productos con SKU, categorías y stock mínimo",
+      "Entradas, salidas y ajustes de inventario",
+      "Punto de venta y registro de ventas",
+      "Reportes para decidir con datos reales",
+    ],
+    preview: "stockea",
+    imageAlt: "Vista del portal Stockea con inventario y movimientos",
+    logo: "/products/stockea-logo.png",
+    accentClass: "text-purple",
+    gradientClass: "product-gradient-stockea",
+    cta: "Solicitar acceso",
+    ctaHref: "/#contacto",
+    demoUrl: DEMO_URLS.stockea,
+    demoLabel: "Abrir portal Stockea",
+    status: "available",
+  },
+  {
+    id: "paginas",
+    name: "Páginas a la medida",
+    tagline: "Presencia digital hecha para tu negocio",
+    description:
+      "Diseñamos y desarrollamos sitios web, landing pages y portales administrativos adaptados a tu marca. Rápidos, responsivos y pensados para convertir visitas en clientes.",
+    features: [
+      "Landing pages y sitios corporativos",
+      "Portales administrativos con acceso seguro",
+      "Diseño responsive y optimizado para móvil",
+      "Integración con WhatsApp, formularios y analytics",
+      "Mantenimiento y soporte posterior",
+    ],
+    preview: "web",
+    imageAlt: "Ejemplo de página web a la medida desarrollada por Hildra",
+    accentClass: "text-yellow",
+    gradientClass: "product-gradient-web",
+    cta: "Solicitar cotización",
+    ctaHref: "/#contacto",
+    demoUrl: DEMO_URLS.webExample,
+    demoLabel: "Ver ejemplo en vivo",
+    status: "available",
+  },
+];

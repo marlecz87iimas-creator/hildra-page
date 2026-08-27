@@ -13,7 +13,7 @@ export const solutions: Solution[] = [
       "Historial y seguimiento de propuestas",
     ],
     status: "available",
-    href: "/#contacto",
+    href: "/#productos",
   },
   {
     id: "stockea",
@@ -27,6 +27,20 @@ export const solutions: Solution[] = [
       "Reportes claros para decidir mejor",
     ],
     status: "available",
-    href: "/#contacto",
+    href: "/#productos",
+  },
+  {
+    id: "paginas",
+    name: "Páginas a la medida",
+    description:
+      "Sitios web y landing pages diseñados para tu marca y objetivos de negocio.",
+    features: [
+      "Diseño responsive y moderno",
+      "Portales administrativos",
+      "Integración con WhatsApp y formularios",
+      "Soporte y mantenimiento",
+    ],
+    status: "available",
+    href: "/#productos",
   },
 ];

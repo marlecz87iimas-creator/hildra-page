@@ -20,6 +20,33 @@ export type Solution = {
   href: string;
 };
 
+export type ProductPreviewId = "costea" | "stockea" | "web";
+
+export type Product = {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  features: string[];
+  preview: ProductPreviewId;
+  imageAlt: string;
+  logo?: string;
+  accentClass: string;
+  gradientClass: string;
+  cta: string;
+  ctaHref: string;
+  demoUrl?: string;
+  demoLabel?: string;
+  status: "available" | "coming-soon";
+};
+
+export type BrandValue = {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+};
+
 export type PricingPlan = {
   id: string;
   name: string;

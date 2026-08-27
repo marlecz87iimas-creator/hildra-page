@@ -34,7 +34,7 @@ export function Logo({
         <span className="flex flex-col leading-none">
           <span
             className={cn(
-              "font-display text-lg font-bold tracking-[0.08em] uppercase sm:text-xl",
+              "font-display text-lg font-bold tracking-[0.04em] lowercase sm:text-xl",
               light ? "text-white" : "text-foreground",
             )}
           >
