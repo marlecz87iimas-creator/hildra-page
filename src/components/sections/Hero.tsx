@@ -74,37 +74,21 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
+          className="relative mx-auto w-full max-w-lg lg:max-w-none"
           initial={reduceMotion ? false : { opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="relative rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
+          <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white shadow-[var(--shadow-soft)]">
             <Image
-              src="/brand/hildra-logo-transparent.png"
-              alt="Hildra — tecnología más humana"
-              width={480}
-              height={200}
-              className="mx-auto h-auto w-full max-w-sm"
+              src="/brand/hildra-brand-sheet.jpg"
+              alt="Identidad de marca Hildra — tecnología más humana"
+              width={1024}
+              height={1024}
+              className="h-auto w-full"
               priority
+              sizes="(max-width: 1024px) 90vw, 480px"
             />
-            <div className="mt-6 grid grid-cols-3 gap-3 text-center">
-              {[
-                { label: "Costea", color: "bg-coral" },
-                { label: "Stockea", color: "bg-purple" },
-                { label: "Web", color: "bg-yellow" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-xl border border-white/10 bg-white/5 px-2 py-3"
-                >
-                  <span
-                    className={`mx-auto mb-2 block size-2 rounded-full ${item.color}`}
-                  />
-                  <span className="text-xs font-medium text-white/80">{item.label}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </motion.div>
       </Container>
