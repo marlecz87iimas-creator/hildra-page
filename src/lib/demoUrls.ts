@@ -1,7 +1,7 @@
 export const DEMO_URLS = {
   costea:
     process.env.NEXT_PUBLIC_COSTEA_DEMO_URL?.trim() ||
-    "https://costea.com.mx",
+    "https://www.costea.com.mx",
   stockea:
     process.env.NEXT_PUBLIC_STOCKEA_DEMO_URL?.trim() ||
     "https://stockea-extended-web-production.up.railway.app",
