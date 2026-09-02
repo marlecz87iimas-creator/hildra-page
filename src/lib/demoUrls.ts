@@ -7,6 +7,6 @@ export const DEMO_URLS = {
     "https://stockea-extended-web-production.up.railway.app",
   webExample:
     process.env.NEXT_PUBLIC_WEB_EXAMPLE_URL?.trim() ||
-    "https://ruckby-web-production.up.railway.app",
+    "https://www.losguerrerosrugbyescarcega.org",
 } as const;
 
