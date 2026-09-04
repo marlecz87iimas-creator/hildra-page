@@ -5,7 +5,7 @@ export const SITE = {
   tagline: "Tecnología más humana para simplificar la vida y los negocios.",
   description:
     "Desarrollamos software que impulsa tu negocio. Creamos aplicaciones móviles, sistemas web y soluciones tecnológicas a la medida para pequeñas empresas, emprendedores y negocios en crecimiento.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://hildra.com.mx",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.hildra.com.mx",
   locale: "es_MX",
   email: "hildra.ti@gmail.com",
   whatsapp: {

@@ -1,20 +1,21 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-const CANONICAL_HOST = "hildra.com.mx";
+const CANONICAL_HOST = "www.hildra.com.mx";
 
 function normalizeHost(host: string) {
   return host.split(":")[0]?.toLowerCase() ?? "";
 }
 
 /**
- * Keep the public URL on hildra.com.mx.
+ * Keep the public URL on www.hildra.com.mx.
  * Do NOT redirect *.railway.app — Railway healthchecks hit that host and need 200.
  */
 export function middleware(request: NextRequest) {
   const host = normalizeHost(request.headers.get("host") ?? "");
 
-  if (host !== "www.hildra.com.mx") {
+  // Only redirect bare hildra.com.mx → www. Leave Railway hosts alone.
+  if (host !== "hildra.com.mx") {
     return NextResponse.next();
   }
 
